@@ -1,0 +1,46 @@
+{
+  "name": "books_backend",
+  "version": "1.0.0",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha --recursive -R xunit test/tests/ > test-reports.xml"
+  },
+  "author": "Arnau Beumala",
+  "license": "ISC",
+  "dependencies": {
+    "apn": "^1.7.8",
+    "async": "^1.5.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "crypto": "0.0.3",
+    "crypto-js": "^3.1.8",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "geolib": "^2.0.22",
+    "in-app-purchase": "^1.4.2",
+    "jade": "*",
+    "jimp": "^0.2.28",
+    "jsonwebtoken": "^5.7.0",
+    "mongoose": "^4.11.1",
+    "morgan": "^1.8.2",
+    "multer": "^1.3.0",
+    "node-gcm": "^0.14.6",
+    "nodemailer": "^2.7.2",
+    "nodemon": "^1.11.0",
+    "rand-token": "^0.2.1",
+    "sendgrid": "^2.0.0",
+    "should": "^8.3.1",
+    "supertest": "^1.2.0",
+    "validatorjs": "^2.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.1"
+  }
+}

@@ -1,0 +1,11 @@
+<testsuite name="Mocha Tests" tests="9" failures="0" errors="0" skipped="0" timestamp="Mon, 23 May 2016 12:01:08 GMT" time="0.16">
+<testcase classname="/hotspots unit test" name="should get all public hotspots" time="0.072"/>
+<testcase classname="/hotspots unit test" name="should get all public hotspots by location" time="0.017"/>
+<testcase classname="/hotspots unit test" name="should get private personal hotspots" time="0.008"/>
+<testcase classname="/hotspots unit test" name="should get my private friends hotspots" time="0.006"/>
+<testcase classname="/hotspots unit test" name="should get my private business hotspots" time="0.008"/>
+<testcase classname="/hotspots unit test" name="should connect indivudual user to a business hotspot" time="0.008"/>
+<testcase classname="/hotspots unit test" name="should not allow to invite from non owner hotspot" time="0.01"/>
+<testcase classname="/hotspots unit test" name="should invite indivudual user to connect to individual hotspot" time="0.01"/>
+<testcase classname="/hotspots unit test" name="should exclude indivudual user to connect to individual hotspot" time="0.012"/>
+</testsuite>
