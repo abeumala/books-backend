@@ -7,7 +7,11 @@ var UserSchema = mongoose.Schema({
     username: {type: String, unique: true},
     email: {type: String, unique: true},
     password: String,
-});
+    favouriteBooks: [{type: mongoose.Schema.ObjectId, ref: 'Book'}]
+},{
+ 	usePushEach: true   
+}
+);
 
 UserSchema.index({ 'username': "text",});
 

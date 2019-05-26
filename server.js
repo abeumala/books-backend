@@ -56,6 +56,7 @@ const router = express.Router();
 require('./routes/auth.js')(app, router);
 require('./routes/comments.js')(app, router); // load our routes and pass in our app and fully configured passport
 require('./routes/books.js')(app, router);
+require('./routes/security.js')(app, router);
 
 // REGISTER OUR ROUTES -------------------------------
 app.use('/api', router);

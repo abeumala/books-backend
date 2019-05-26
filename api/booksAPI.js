@@ -41,6 +41,10 @@ BooksAPI.create = (req, res) => {
 		book.author = req.body.author;
 	}
 
+	if (req.body.coverUrl != undefined) {
+		book.coverUrl = req.body.coverUrl;
+	}
+
 	book.save( (err) => {
 		if (err) {
 			// duplicate entry
