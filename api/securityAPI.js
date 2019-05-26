@@ -8,7 +8,6 @@ const mongoose = require('mongoose'),
 const SecurityAPI = () => {};
 
 SecurityAPI.update = (req, res) => {
-	const favouriteBook = req.body.favouriteBook
 	User.findById(req.params.id)
 	.exec(async (err, user) => {
 		if (err) {
@@ -23,13 +22,11 @@ SecurityAPI.update = (req, res) => {
 
 
         if (req.body.favouriteBook != undefined) {
-            let index = user.favouriteBooks.map((item) => {return item}).indexOf(favouriteBook)  //if item not found, returns -1
-            // console.log(user.favouriteBooks)
-            // console.log(index)
+            let index = user.favouriteBooks.indexOf(req.body.favouriteBook)  //if item not found, returns
             if (index != -1) {
             	user.favouriteBooks.splice(index, 1)
             }else{
-            	user.favouriteBooks.push(favouriteBook)
+            	user.favouriteBooks.push(req.body.favouriteBook)
             }
         }
 
