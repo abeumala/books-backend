@@ -7,7 +7,6 @@ const mongoose = require('mongoose'),
 const BooksAPI = () => {};
 
 BooksAPI.getAll = (req, res) => {
-	
 	Book.find( (err, books) => {
 		if (err) {
 			return res.json({ 
