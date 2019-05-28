@@ -7,4 +7,6 @@ module.exports = (app, router) => {
 
 	router.put('/profile/:id', securityAPI.updateUser);
 
+	router.delete('/delete', securityAPI.deleteUser);
+
 };

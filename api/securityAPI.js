@@ -96,5 +96,10 @@ SecurityAPI.updateUser = (req, res) => {
 	})
 }
 
+SecurityAPI.deleteUser = (req, res) => {
+	User.findOneAndRemove(req.params.id)
+		.then((response) => res.json({ "message": "user account deleted"}))
+}
+
 
 module.exports = SecurityAPI;

@@ -52,7 +52,7 @@ AuthAPI.authenticate = (req, res) => {
 		if (err) throw err;
 
 		if (user) {
-			console.log('login in:', user)
+			
 			if (req.body.password && req.body.password != user.password) {
 				//res.statusCode = 401;
 				res.status(404);

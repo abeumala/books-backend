@@ -8,7 +8,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha --recursive -R xunit test/tests/ > test-reports.xml"
+    "test": "node_modules/mocha/bin/mocha --recursive -R xunit test/tests/ > test-reports.xml",
+    "nodemon": "nodemon server.js"
   },
   "author": "Arnau Beumala",
   "license": "ISC",
