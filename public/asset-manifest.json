@@ -1,11 +1,12 @@
 {
   "main.css": "static/css/main.a5c03540.css",
   "main.css.map": "static/css/main.a5c03540.css.map",
-  "main.js": "static/js/main.8bb57699.js",
-  "main.js.map": "static/js/main.8bb57699.js.map",
+  "main.js": "static/js/main.5294d0f2.js",
+  "main.js.map": "static/js/main.5294d0f2.js.map",
   "static/media/book1Cover.jpg": "static/media/book1Cover.e60a4424.jpg",
   "static/media/book2Cover.jpg": "static/media/book2Cover.206f34f7.jpg",
   "static/media/book3Cover.jpg": "static/media/book3Cover.d35edf7b.jpg",
+  "static/media/book5Cover.jpg": "static/media/book5Cover.5f1bbc25.jpg",
   "static/media/favourited.png": "static/media/favourited.d695dde2.png",
   "static/media/nonFavourited.png": "static/media/nonFavourited.d2ea522a.png"
 }
