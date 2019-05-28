@@ -9,7 +9,8 @@
   "main": "server.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha --recursive -R xunit test/tests/ > test-reports.xml",
-    "nodemon": "nodemon server.js"
+    "nodemon": "nodemon server.js",
+    "seeds": "node ./bin/seeds.js"
   },
   "engines": {
     "node": "v11.14.0"
@@ -36,6 +37,7 @@
     "mongoose": "^4.11.1",
     "morgan": "^1.8.2",
     "multer": "^1.3.0",
+    "node": "^12.3.1",
     "node-gcm": "^0.14.6",
     "nodemailer": "^2.7.2",
     "nodemon": "^1.11.0",
