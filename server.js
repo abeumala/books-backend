@@ -13,10 +13,12 @@ const jwt = require('jsonwebtoken');
 const fs = require('fs');
 const morgan = require('morgan');
 
+require('dotenv').config();
+
 // Iniciamos la aplicación Express
 const app = express();
 
-mongoose.connect(config.database); // connect to database
+mongoose.connect(process.env.MONGODB_URI); // connect to database
 app.set('superSecret', config.secret); // secret variable
 
 app.use( (req, res, next) => {
@@ -58,8 +60,15 @@ require('./routes/comments.js')(app, router); // load our routes and pass in our
 require('./routes/books.js')(app, router);
 require('./routes/security.js')(app, router);
 
+
 // REGISTER OUR ROUTES -------------------------------
 app.use('/api', router);
+
+//REACT APP index html
+app.use((req, res, next) => {
+  //If none of the routes match, send thenm the React HTML.
+  res.sendFile(__dirname + "/public/index.html")
+})
 
 // Inicio del servidor
 app.listen(app.get('port'), () => {

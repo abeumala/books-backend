@@ -11,6 +11,9 @@
     "test": "node_modules/mocha/bin/mocha --recursive -R xunit test/tests/ > test-reports.xml",
     "nodemon": "nodemon server.js"
   },
+  "engines": {
+    "node": "v11.14.0"
+  },
   "author": "Arnau Beumala",
   "license": "ISC",
   "dependencies": {
