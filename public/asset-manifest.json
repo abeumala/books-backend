@@ -1,12 +1,15 @@
 {
-  "main.css": "static/css/main.a5c03540.css",
-  "main.css.map": "static/css/main.a5c03540.css.map",
-  "main.js": "static/js/main.5294d0f2.js",
-  "main.js.map": "static/js/main.5294d0f2.js.map",
+  "main.css": "static/css/main.517b2cbb.css",
+  "main.css.map": "static/css/main.517b2cbb.css.map",
+  "main.js": "static/js/main.39c05eb8.js",
+  "main.js.map": "static/js/main.39c05eb8.js.map",
+  "static/media/16yold_when_i_looked_better.jpg": "static/media/16yold_when_i_looked_better.1b46b3ce.jpg",
   "static/media/book1Cover.jpg": "static/media/book1Cover.e60a4424.jpg",
   "static/media/book2Cover.jpg": "static/media/book2Cover.206f34f7.jpg",
   "static/media/book3Cover.jpg": "static/media/book3Cover.d35edf7b.jpg",
+  "static/media/book4Cover.jpg": "static/media/book4Cover.1de6d03f.jpg",
   "static/media/book5Cover.jpg": "static/media/book5Cover.5f1bbc25.jpg",
+  "static/media/book6Cover.jpg": "static/media/book6Cover.25389d10.jpg",
   "static/media/favourited.png": "static/media/favourited.d695dde2.png",
   "static/media/nonFavourited.png": "static/media/nonFavourited.d2ea522a.png"
 }
