@@ -44,22 +44,28 @@ const books =[
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     author: "Immanuel Kant",
     coverUrl: "book5Cover.jpg"
+  },
+
+  {
+    title: "Das Kapital",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+    author: "Karl Marx",
+    coverUrl: "book6Cover.jpg"
   }
 ]
 
 const getBooks = () => {
 
-    // console.log(result);
-    books.forEach((book) => {
-      const { title, description, author, coverUrl } = book;
+  books.forEach((book) => {
+    const { title, description, author, coverUrl } = book;
 
-          const newBook = new Book({ title, description, author, coverUrl  });
+        const newBook = new Book({ title, description, author, coverUrl  });
 
-        newBook.save()
-        .then((result) => console.log('Created book', result.title))
-        .catch(error => console.log('heep' + error));
-    return;
-    });
+      newBook.save()
+      .then((result) => console.log('Created book', result.title))
+      .catch(error => console.log('heep' + error));
+  return;
+  });
 }
 
 getBooks();
