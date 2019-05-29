@@ -8,6 +8,7 @@ const BookSchema = mongoose.Schema({
     description: String,
     author: String,
     coverUrl: String,
+    bookCoverUrl: String
 });
 
 // create the model for users and expose it to our app

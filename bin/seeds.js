@@ -15,51 +15,58 @@ const books =[
     title: "Beyond good and evil",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     author: "F. Nietzsche",
-    coverUrl: "book1Cover.jpg"
+    coverUrl: "book1Cover.jpg",
+    bookCoverUrl: "book1Detail.jpg"
   },
 
   {
     title: "The Republic",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     author: "Plato",
-    coverUrl: "book2Cover.jpg"
+    coverUrl: "book2Cover.jpg",
+    bookCoverUrl: "book2Detail.jpg"
   },
 
   {
-    title: "Being and Time",
+    title: "The Illiad",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-    author: "M. Heidegger",
-    coverUrl: "book3Cover.jpg"
+    author: "Homer",
+    coverUrl: "book3Cover.jpg",
+    bookCoverUrl: "book3Detail.jpg"
   },
 
   {
     title: "Discipline and Punish",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     author: "Michael Foucault",
-    coverUrl: "book4Cover.jpg"
+    coverUrl: "book4Cover.jpg",
+    bookCoverUrl: "book4Detail.jpg"
   },
 
   {
     title: "Critique of Pure Reason",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     author: "Immanuel Kant",
-    coverUrl: "book5Cover.jpg"
+    coverUrl: "book5Cover.jpg",
+    bookCoverUrl: "book5Detail.jpg"
   },
 
   {
     title: "Das Kapital",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
     author: "Karl Marx",
-    coverUrl: "book6Cover.jpg"
+    coverUrl: "book6Cover.jpg",
+    bookCoverUrl: "book5Detail.jpg"
+    
   }
 ]
 
 const getBooks = () => {
 
   books.forEach((book) => {
-    const { title, description, author, coverUrl } = book;
+    const { title, description, author, coverUrl, bookCoverUrl } = book;
 
-        const newBook = new Book({ title, description, author, coverUrl  });
+        const newBook = new Book({ title, description, author, coverUrl, bookCoverUrl });
 
       newBook.save()
       .then((result) => console.log('Created book', result.title))
