@@ -7,4 +7,6 @@ module.exports = (app, router) => {
 	router.post('/comments', commentsAPI.create);
 
 	router.put('/comments/:id', commentsAPI.update);
+
+	// router.get('/profile/:id', commentsAPI.getUserComments)
 };

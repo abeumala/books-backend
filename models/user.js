@@ -8,7 +8,8 @@ var UserSchema = mongoose.Schema({
     email: {type: String, unique: true},
     password: String,
     favouriteBooks: [{type: mongoose.Schema.ObjectId, ref: 'Book'}],
-    comments: [{type: mongoose.Schema.ObjectId, ref: 'Comment'}]
+    comments: [{type: mongoose.Schema.ObjectId, ref: 'Comment'}],
+    // voted: {type: Boolean, default: false}
 },{
  	usePushEach: true   
 }

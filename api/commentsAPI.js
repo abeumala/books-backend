@@ -4,6 +4,8 @@ const mongoose = require('mongoose'),
 	jwt = require('jsonwebtoken'), // used to create, sign, and verify tokens
 	config = require('../config/config')
 	
+const User = mongoose.model('User')	
+
 const CommentsAPI = () => {};
 
 CommentsAPI.getAll = (req, res) => {
@@ -27,6 +29,28 @@ CommentsAPI.getAll = (req, res) => {
 		});
 	});
 }
+
+// CommentsAPI.getUserComments = (req, res) => {
+
+// 	console.log(req)
+
+// 	Comment.find({book: req.query.bookId}, (err, comments) => {
+// 		if (err) {
+// 			return res.json({ 
+// 				success: false, 
+// 				error: err,
+// 				errors: {
+// 					comment: "Error fetching comments",
+// 				}
+// 			});
+// 		}
+
+// 		return res.json({
+// 			success: true, 
+// 			comments: comments,
+// 		});
+// 	});
+// }
 
 CommentsAPI.create = (req, res) => {
 	let comment = new Comment();
