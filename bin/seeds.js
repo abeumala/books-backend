@@ -56,7 +56,7 @@ const books =[
     description: "One of the most notorious works of modern times, as well as one of the most influential, Capital is an incisive critique of private property and the social relations it generates. Living in exile in England, where this work was largely written, Marx drew on a wide-ranging knowledge of its society to support his analysis and generate fresh insights. Arguing that capitalism would create an ever-increasing division in wealth and welfare, he predicted its abolition and replacement by a system with common ownership of the means of production.",
     author: "Karl Marx",
     coverUrl: "book6Cover.jpg",
-    bookCoverUrl: "book5Detail.jpg"
+    bookCoverUrl: "book6Detail.jpg"
     
   }
 ]
